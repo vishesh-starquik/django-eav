@@ -64,7 +64,7 @@ class Migration(migrations.Migration):
                 ('value_float', models.FloatField(blank=True, null=True)),
                 ('value_int', models.IntegerField(blank=True, null=True)),
                 ('value_date', models.DateTimeField(blank=True, null=True)),
-                ('value_bool', models.NullBooleanField()),
+                ('value_bool', models.BooleanField(blank=True, null=True)),
                 ('generic_value_id', models.IntegerField(blank=True, null=True)),
                 ('created', models.DateTimeField(default=django.utils.timezone.now, verbose_name='created')),
                 ('modified', models.DateTimeField(auto_now=True, verbose_name='modified')),
